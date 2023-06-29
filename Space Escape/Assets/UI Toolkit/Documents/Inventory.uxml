@@ -1,0 +1,81 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/StyleSheets/Inventory.uss?fileID=7433441132597879392&amp;guid=e0412788480af514cac8e64d50705b81&amp;type=3#Inventory" />
+    <ui:VisualElement name="Inventory" style="flex-grow: 1; background-color: rgb(36, 36, 36);">
+        <ui:VisualElement name="Header" style="flex-grow: 1; background-color: rgb(19, 19, 19); height: auto; position: absolute; top: 0; right: 0; left: 0; bottom: auto; flex-direction: row;">
+            <ui:Label tabindex="-1" text="Inventory" display-tooltip-when-elided="true" style="font-size: 55px; padding-left: 14px; padding-right: 14px; padding-top: 14px; padding-bottom: 14px; color: rgb(255, 255, 255); -unity-font: initial; -unity-text-align: middle-left; flex-grow: 0; background-color: rgba(36, 36, 36, 0);" />
+            <ui:VisualElement name="ItemCount" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Label tabindex="-1" text="&lt;b&gt;Capacity&lt;/b&gt;: 00/54" display-tooltip-when-elided="true" style="font-size: 55px; -unity-text-align: middle-right; padding-left: 14px; padding-right: 14px; padding-top: 14px; padding-bottom: 14px; color: rgb(255, 255, 255); -unity-text-outline-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ItemDetails" style="flex-grow: 1; background-color: rgb(58, 58, 58); position: absolute; bottom: 0; left: auto; top: 104px; width: 25%; align-items: stretch; right: 0; margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+            <ui:Label tabindex="-1" text="Item Name" display-tooltip-when-elided="true" name="Name" style="font-size: 40px; color: rgb(255, 255, 255); -unity-text-align: upper-center; -unity-font-style: bold; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 8px; border-right-width: 8px; border-top-width: 8px; border-bottom-width: 8px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+            <ui:VisualElement name="Details" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 8px; border-right-width: 8px; border-top-width: 8px; border-bottom-width: 8px;">
+                <ui:Label tabindex="-1" text="The FitnessGram Pacer test is a multistage aerobic capacity test that progressively gets more difficult as it continues." display-tooltip-when-elided="true" name="Description" style="font-size: 30px; color: rgb(255, 255, 255); flex-wrap: nowrap; white-space: normal; margin-left: 19px; margin-right: 19px; margin-top: 19px; margin-bottom: 19px; -unity-font-style: normal;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Buttons" style="flex-grow: 0.05; background-color: rgba(0, 0, 0, 0); flex-direction: row; position: relative; justify-content: flex-start; align-self: auto; flex-wrap: nowrap; border-left-width: 8px; border-right-width: 8px; border-top-width: 8px; border-bottom-width: 8px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); flex-shrink: 0.1; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                <ui:Button text="Equip" display-tooltip-when-elided="true" name="Equip" style="width: auto; position: relative; align-self: auto; justify-content: flex-start; align-items: stretch; flex-grow: 1; font-size: 40px; color: rgb(255, 255, 255); background-color: rgb(4, 156, 0); display: flex; visibility: visible; overflow: hidden; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+                <ui:Button text="Use" display-tooltip-when-elided="true" name="Use" style="width: auto; position: relative; align-self: auto; justify-content: flex-start; align-items: stretch; flex-grow: 1; font-size: 40px; color: rgb(255, 255, 255); background-color: rgb(4, 156, 0); display: none; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+                <ui:Button text="Drop" display-tooltip-when-elided="true" name="Drop" style="width: auto; position: relative; align-self: auto; justify-content: flex-start; align-items: stretch; flex-grow: 1; font-size: 40px; color: rgb(255, 255, 255); background-color: rgb(174, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Content" style="flex-grow: 1; background-color: rgb(51, 51, 51); position: absolute; left: 10px; bottom: 10px; top: 110px; right: 500px; margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px; flex-direction: row; flex-wrap: wrap; justify-content: center; align-self: auto;">
+            <ui:VisualElement name="Grid" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; flex-wrap: wrap; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; width: auto;">
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+                <ui:VisualElement name="Slot" class="slot" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ItemSlots" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; left: 0; top: 0; right: 0; bottom: 0; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; flex-direction: row;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

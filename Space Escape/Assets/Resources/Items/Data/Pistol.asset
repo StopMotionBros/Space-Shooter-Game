@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f99431027465af4aa51dea01f41671d, type: 3}
+  m_Name: Pistol
+  m_EditorClassIdentifier: 
+  _canUse: 1
+  _important: 0
+  _dropPrefab: {fileID: 5861855094086560246, guid: d789ba6da7623b64e938048e639f6a72,
+    type: 3}
+  _name: Pistol
+  _description: Small gun
+  _stackable: 0
+  _weight: 50
+  _armsAnimator: {fileID: 9100000, guid: 0be7cc7e28dfdfb46b6d1a714fd1de60, type: 2}
